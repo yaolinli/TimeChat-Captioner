@@ -36,7 +36,7 @@ In this case, you can refer to the code under:
 
 to adapt:
 
-the reward function, and
+the **reward function**, and
 
 the video processing logic
 
