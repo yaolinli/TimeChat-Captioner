@@ -28,7 +28,7 @@ deepspeed --hostfile $hostfile ${GRPO_CLI_PATH} \
         --rlhf_type grpo \
         --model $model \
         --reward_funcs external_timestamp_format_reward external_timestamp_length_reward external_dense_caption_f1_reward external_dense_caption_sodam_reward \
-        --reward_weights 0.3 0.3 1.0 1.0 \
+        --reward_weights 0.5 0.5 1.0 1.0 \
         --train_type full \
         --torch_dtype bfloat16 \
         --dataset ${DATASET} \
