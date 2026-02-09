@@ -25,8 +25,12 @@ Below, we provide simple examples to show how to use TimeChat-Captioner-GRPO-7B 
 We advise you to install the dependencies with the following command:
 
 ```bash
+conda create -n timechatcap python=3.12
+conda activate timechatcap
+pip install torch torchvision
 pip install transformers==4.57.1
 pip install accelerate
+pip install flash-attn --no-build-isolation
 # It's highly recommended to use `[decord]` feature for faster video loading.
 pip install qwen-omni-utils[decord] -U
 ```
@@ -118,8 +122,35 @@ print(response)
 print("="*50)
 ```
 
-## Inference
-Please refer to ```Infer/infer.sh``` for multiple-gpu inference.
+## Inference on OmniDCBench
+
+We provide a multi-GPU batch inference pipeline to evaluate TimeChat-Captioner on the [OmniDCBench](https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark) benchmark.
+
+**Step 1.** Download and extract the benchmark videos (see [`Infer/readme.md`](Infer/readme.md) for full instructions):
+
+```bash
+# Clone the dataset
+git clone https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark OmniDCBench
+
+# Extract videos into Video/ directory
+cd OmniDCBench && mkdir -p Video
+cat Movie.tar.gz.*   | tar -xzf - -C Video/
+cat Youtube.tar.gz.* | tar -xzf - -C Video/
+
+# Prepare ground-truth file
+cp ours_gt_file.json ours_gt_file.jsonl
+```
+
+**Step 2.** Edit `Infer/infer.sh` to set your paths (`MODEL_PATH`, `VIDEO_DIR`, `INPUT_PATH`, `GPU_NUM`, etc.).
+
+**Step 3.** Run inference:
+
+```bash
+cd Infer
+bash infer.sh
+```
+
+Results will be merged into `<OUTPUT_DIR>/merged_result.jsonl`. See [`Infer/readme.md`](Infer/readme.md) for detailed configuration options and output format.
 
 
 ## Train

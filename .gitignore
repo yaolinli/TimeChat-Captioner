@@ -1,0 +1,16 @@
+ckpts/
+*.pt
+*.pth
+*.pkl
+*.ckpt
+*.pt
+*.pth
+*.pkl
+*.ckpt
+*.pt
+*.pth
+*.pkl
+*.ckpt
+demo/
+quick_start.py
+*result/
