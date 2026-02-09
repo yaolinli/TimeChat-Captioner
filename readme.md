@@ -8,21 +8,26 @@
 
 </div>
 
+---
+
 ## 🌟 Overview
+
 **TimeChat-Captioner** is a multimodal model designed to generate detailed, time-aware, and structurally coherent captions for multi-scene videos. It effectively coordinates visual and audio information to provide comprehensive video descriptions.
 
-
-- **🏠 Model:** [TimeChat-Captioner(7B)](https://huggingface.co/yaolily/TimeChat-Captioner-GRPO-7B)
+- **🌐 Project Page:** [timechat-captioner.github.io](https://timechat-captioner.github.io/) (coming soon)
+- **🏠 Model:** [TimeChat-Captioner (7B)](https://huggingface.co/yaolily/TimeChat-Captioner-GRPO-7B)
 - **📚 Train Dataset:** [TimeChatCap-40K](https://huggingface.co/datasets/yaolily/Timechat-OmniCaptioner-40K)
 - **🏆 Benchmark:** [OmniDCBench](https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark)
 
 
 
+---
+
 ## 🚀 Quick Start
 
 Below, we provide simple examples to show how to use TimeChat-Captioner-GRPO-7B with 🤗 Transformers.
 
-We advise you to install the dependencies with the following command:
+### Installation
 
 ```bash
 conda create -n timechatcap python=3.12
@@ -35,7 +40,9 @@ pip install flash-attn --no-build-isolation
 pip install qwen-omni-utils[decord] -U
 ```
 
-**Note:** To annotate high-quality timestamps and captions, limit video input to around 1 minute. Please segment longer videos into around 60-second clips before processing.
+### Usage
+
+> **Note:** To annotate high-quality timestamps and captions, limit video input to around 1 minute. Please segment longer videos into around 60-second clips before processing.
 
 ```python
 import torch
@@ -122,7 +129,9 @@ print(response)
 print("="*50)
 ```
 
-## Inference on OmniDCBench
+---
+
+## 📊 Inference on OmniDCBench
 
 We provide a multi-GPU batch inference pipeline to evaluate TimeChat-Captioner on the [OmniDCBench](https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark) benchmark.
 
@@ -135,10 +144,8 @@ git clone https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark OmniDCB
 # Extract videos into Video/ directory
 cd OmniDCBench && mkdir -p Video
 cat Movie.tar.gz.*   | tar -xzf - -C Video/
-cat Youtube.tar.gz.* | tar -xzf - -C Video/
-
-# Prepare ground-truth file
-cp ours_gt_file.json ours_gt_file.jsonl
+mkdir -p Video/Youtube
+cat Youtube.tar.gz.* | tar -xf - -C Video/Youtube
 ```
 
 **Step 2.** Edit `Infer/infer.sh` to set your paths (`MODEL_PATH`, `VIDEO_DIR`, `INPUT_PATH`, `GPU_NUM`, etc.).
@@ -152,11 +159,22 @@ bash infer.sh
 
 Results will be merged into `<OUTPUT_DIR>/merged_result.jsonl`. See [`Infer/readme.md`](Infer/readme.md) for detailed configuration options and output format.
 
+---
 
-## Train
+## 🔧 Train
 
-Training can be launched using the scripts provided in ```Train/script/*.sh```.  
-Please refer to ```Train/readme.md``` for detailed instructions.
+Training can be launched using the scripts provided in `Train/script/*.sh`.
+Please refer to [`Train/readme.md`](Train/readme.md) for detailed instructions.
 
-## Evaluation on OmniDCBench
+---
+
+## 📝 TODOs
+
+- [ ] Upload eval code to calculate SODA_M and F1.
+- [ ] Integrate eval code to lmms-eval.
+
+---
+
+## 📖 Citation
+
 
