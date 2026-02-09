@@ -19,6 +19,7 @@
 - **📚 Train Dataset:** [TimeChatCap-40K](https://huggingface.co/datasets/yaolily/Timechat-OmniCaptioner-40K)
 - **🏆 Benchmark:** [OmniDCBench](https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark)
 
+<img width="1773" height="714" alt="image" src="https://github.com/user-attachments/assets/4234857e-5ba6-4b6e-bbb7-eabd0eac2244" />
 
 
 ---
