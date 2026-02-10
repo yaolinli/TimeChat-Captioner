@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![Paper](https://img.shields.io/badge/arXiv-2602.08711-b31b1b)](https://arxiv.org/pdf/2602.08711)
 [![Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-blue)](https://huggingface.co/yaolily/TimeChat-Captioner-GRPO-7B)
 [![Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-green)](https://huggingface.co/datasets/yaolily/Timechat-OmniCaptioner-40K)
 [![Benchmark](https://img.shields.io/badge/🤗%20Hugging%20Face-Benchmark-yellow)](https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark)
@@ -177,5 +178,17 @@ Please refer to [`Train/readme.md`](Train/readme.md) for detailed instructions.
 ---
 
 ## 📖 Citation
+
+```bibtex
+@misc{yao2026timechatcaptioner,
+      title={TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions}, 
+      author={Linli Yao and Yuancheng Wei and Yaojie Zhang and Lei Li and Xinlong Chen and Feifan Song and Ziyue Wang and Kun Ouyang and Yuanxin Liu and Lingpeng Kong and Qi Liu and Pengfei Wan and Kun Gai and Yuanxing Zhang and Xu Sun},
+      year={2026},
+      eprint={2602.08711},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.08711}
+}
+```
 
 
