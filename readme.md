@@ -5,7 +5,7 @@
 [![Paper](https://img.shields.io/badge/arXiv-2602.08711-b31b1b)](https://arxiv.org/pdf/2602.08711)
 [![Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-blue)](https://huggingface.co/yaolily/TimeChat-Captioner-GRPO-7B)
 [![Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-green)](https://huggingface.co/datasets/yaolily/Timechat-OmniCaptioner-40K)
-[![Benchmark](https://img.shields.io/badge/🤗%20Hugging%20Face-Benchmark-yellow)](https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark)
+[![Benchmark](https://img.shields.io/badge/🤗%20Hugging%20Face-Benchmark-yellow)](https://huggingface.co/datasets/yaolily/OmniDCBench)
 
 </div>
 
@@ -141,7 +141,7 @@ We provide a multi-GPU batch inference pipeline to evaluate TimeChat-Captioner o
 
 ```bash
 # Clone the dataset
-git clone https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark OmniDCBench
+git clone https://huggingface.co/datasets/yaolily/OmniDCBench OmniDCBench
 
 # Extract videos into Video/ directory
 cd OmniDCBench && mkdir -p Video
