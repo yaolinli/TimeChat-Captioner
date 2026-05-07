@@ -10,12 +10,15 @@
 </div>
 
 ---
+## 🔥 News
+
+- **[2026.05]** 🎉 TimeChat-Captioner has been accepted at **ICML 2026**!
 
 ## 🌟 Overview
 
 **TimeChat-Captioner** is a multimodal model designed to generate detailed, time-aware, and structurally coherent captions for multi-scene videos. It effectively coordinates visual and audio information to provide comprehensive video descriptions.
 
-- **🌐 Project Page:** [timechat-captioner.github.io](https://timechat-captioner.github.io/) (coming soon)
+- **🌐 Project Page:** [timechat-captioner.github.io](https://timechat-captioner.github.io/) 
 - **🏠 Model:** [TimeChat-Captioner (7B)](https://huggingface.co/yaolily/TimeChat-Captioner-GRPO-7B)
 - **📚 Train Dataset:** [TimeChatCap-40K](https://huggingface.co/datasets/yaolily/Timechat-OmniCaptioner-42K)
 - **🏆 Benchmark:** [OmniDCBench](https://huggingface.co/datasets/yaolily/OmniDenseCap-Benchmark)
