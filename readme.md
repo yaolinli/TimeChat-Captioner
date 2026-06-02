@@ -183,10 +183,10 @@ Please refer to [`Train/readme.md`](Train/readme.md) for detailed instructions.
 ## 📖 Citation
 
 ```bibtex
-@article{yao2026timechatcap,
+@inproceedings{yao2026timechatcap,
   title={TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions},
   author={Yao, Linli and Wei, Yuancheng and Zhang, Yaojie and Li, Lei and Chen, Xinlong and Song, Feifan and Wang, Ziyue and Ouyang, Kun and Liu, Yuanxin and Kong, Lingpeng and others},
-  journal={arXiv preprint arXiv:2602.08711},
+  booktitle={Proceedings of the Forty-Third International Conference on Machine Learning},
   year={2026}
 }
 ```
