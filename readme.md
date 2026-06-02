@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![Project Page](https://img.shields.io/badge/Project%20Page-TimeChat--Captioner-1B2838?logo=githubpages&logoColor=white)](https://timechat-captioner.github.io/)
 [![Paper](https://img.shields.io/badge/arXiv-2602.08711-b31b1b)](https://arxiv.org/pdf/2602.08711)
 [![Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-blue)](https://huggingface.co/yaolily/TimeChat-Captioner-GRPO-7B)
 [![Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-green)](https://huggingface.co/datasets/yaolily/Timechat-OmniCaptioner-40K)
